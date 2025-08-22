@@ -1,7 +1,4 @@
-/* Macro Defined for LED 1 */
-#define LED_1 22
-/* Macro Defined for LED 2 */
-#define LED_2 12
+
 // Message to display on serial terminal 
 char message[] = "Welcome to RTOS with ESP32";
 // task 1 Handler 
