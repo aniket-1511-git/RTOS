@@ -3,7 +3,7 @@
 xQueueHandle queue;
 /*
 * Function Name : int main(void)
-* Description   : This Function initializes UART, creates two FreeRTOS tasks
+* Description   : This Function initializes UART, creates two FreeRTOS tasks, Create Queue
 */
 int main(void)
 {
