@@ -1,8 +1,8 @@
 // Binary semaphore Handler
 static SemaphoreHandle_t binSema;
 /*
-* Function Name : 
-* Description   :
+* Function Name : void readBinSemaphore(void *parameter)
+* Description   :This Function releases a binary semaphore, prints the received parameter value
 */
 void readBinSemaphore(void *parameter)
 {
