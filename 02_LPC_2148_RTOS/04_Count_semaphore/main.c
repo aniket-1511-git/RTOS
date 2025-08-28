@@ -8,7 +8,7 @@ xSemaphoreHandle  countSemaphore;
 int main(void)
 {
 	// creating Semaphore
-	vSemaphoreCreateBinary(countSemaphore);
+	 countSemaphore = xSemaphoreCreateCounting(3,1);
 	// Initialize UART
 	uart_init(9600);
 	// config uart 0
@@ -31,8 +31,8 @@ int main(void)
 							1,                  // Priority
 							NULL                // Task handle (not needed here)
 		);
-	   // Start the FreeRTOS scheduler
-		 vTaskStartScheduler();
+	  // Start the FreeRTOS scheduler
+		vTaskStartScheduler();
 	  while(1);
 
 }
