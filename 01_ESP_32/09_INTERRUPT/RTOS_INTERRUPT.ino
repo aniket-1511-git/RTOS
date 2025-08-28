@@ -17,9 +17,11 @@ void IRAM_ATTR onTimer(void* arg)
   int pinStatus = digitalRead(ledPin);
   // Toggle the LED pin
   digitalWrite(ledPin,!pinStatus);
+  Serial.println("LED Blinking");
 }
 void setup()
 {
+   Serial.begin(9600);
   // LED pin Configuration
   pinMode(ledPin,OUTPUT);
    // Define the timer configuration structure
