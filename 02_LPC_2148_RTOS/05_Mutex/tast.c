@@ -1,7 +1,7 @@
 #include "header.h"
 /*
 * Function Name : void taskA(void *parameter)
-* Description   : Periodically transmits "Task A running" over UART 
+* Description   : This function takes a mutex, sends a UART message, releases the mutex 
 */
 
 void taskA(void *parameter)
@@ -21,7 +21,7 @@ void taskA(void *parameter)
 
 /*
 * Function Name : void taskB(void *parameter)
-* Description   : Periodically transmits "Task B running" over UART 
+* Description   : This function takes a mutex, sends a UART message, releases the mutex 
 */
 
 void taskB(void *parameter)
