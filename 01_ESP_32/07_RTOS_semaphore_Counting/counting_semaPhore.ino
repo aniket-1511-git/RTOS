@@ -19,10 +19,10 @@ static SemaphoreHandle_t mutex;
 static SemaphoreHandle_t semEmpty;
 static SemaphoreHandle_t semFilled;
 /*
-* Function Name : void readProducer(void *parameters) 
-* Description   : this function to write given number of times to shared buffer
+* Function Name : void writeProducer(void *parameters) 
+* Description   : this function to write values into the shared buffer
 */
-void readProducer(void *parameters) 
+void writeProducer(void *parameters) 
 {
    //  copy received parameter in to local varriable
   int num = *(int *)parameters;
@@ -43,7 +43,10 @@ void readProducer(void *parameters)
   }
   vTaskDelete(NULL);
 }
-
+/*
+* Function Name : void writeConsumer(void *parameters)
+* Description   : this function to read values from the shared buffer
+*/
 void writeConsumer(void *parameters) {
   int val;
   while (1) {
