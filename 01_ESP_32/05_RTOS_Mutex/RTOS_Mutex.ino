@@ -3,8 +3,8 @@
 // Varriable for Mutex handler
 static SemaphoreHandle_t mutexHandler;
 /*
-* Function Name : 
-* Description   :
+* Function Name : void ledBlink(void *para)
+* Description   : this Function prints it on the serial monitor, and then continuously blinks *                  an LED
 */
 void ledBlink(void *para)
 {
