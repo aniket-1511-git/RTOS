@@ -1,13 +1,14 @@
 #include "header.h"
 /*
 * Function Name : void taskA(void *parameter)
-* Description   : Periodically transmits "Task A running" over UART every 1 second.
+* Description   : This function waits to take a counting semaphore and, sends data on UART
 */
 
 void taskA(void *parameter)
 {
     while(1)
     {
+				// check if count semaphore is null or not
 				if(NULL != countSemaphore)
 			{
 				// Take semaphore
@@ -22,13 +23,14 @@ void taskA(void *parameter)
 
 /*
 * Function Name : void taskB(void *parameter)
-* Description   : Periodically transmits "Task B running" over UART every 1 second.
+* Description   : This function waits to take a counting semaphore and, sends data on UART
 */
 
 void taskB(void *parameter)
 {
     while(1)
     {
+			// check if count semaphore is null or not
 			if(NULL != countSemaphore)
 			{
 				// Take semaphore

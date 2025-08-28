@@ -3,7 +3,7 @@
 xSemaphoreHandle  countSemaphore;
 /*
 * Function Name : int main(void)
-* Description   : This Function initializes UART, creates two FreeRTOS tasks
+* Description   : This Function initializes UART, creates two FreeRTOS tasks 
 */
 int main(void)
 {
