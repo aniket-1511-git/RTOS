@@ -8,7 +8,6 @@
 /* defined macro for receiver data ready */
 #define RDR_U8  (U0LSR&1)
 	 
-
 void uart_init(uint16_t );            	     // Function to Initializes uart 0
 void uart_charTransmit(uint8_t);             // Fucntion to Transmit char via uart0
 uint8_t uart_charReceive(void);              // Fucntion to Receive char via uart0
